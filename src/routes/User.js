@@ -4,6 +4,7 @@ const auth = require('../middlewares/auth.js')
 
 const user_controller = require("../controllers/User.js");
 
+//Route
 router.get("/api/homeUser", user_controller.index);
 router.get("/api/testAuth", auth.index);
 router.post("/api/createUser", user_controller.addUser);
